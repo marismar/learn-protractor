@@ -1,0 +1,42 @@
+{
+  "name": "learn-protractor",
+  "version": "1.0.0",
+  "description": "Projeto para o curso de Protractor da Escola TAT",
+  "scripts": {
+    "lint": "npx standard",
+    "lint:fix": "npx standard --fix",
+    "pretest": "webdriver-manager update",
+    "test": "npm run test:chrome && npm run test:firefox",
+    "test:chrome": "protractor configurations/chrome.config.js",
+    "test:firefox": "protractor configurations/firefox.config.js"
+  },
+  "standard": {
+    "globals": [
+      "beforeAll",
+      "beforeEach",
+      "browser",
+      "by",
+      "describe",
+      "element",
+      "expect",
+      "it"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marismarcosta/learn-protractor"
+  },
+  "keywords": [
+    "protractor",
+    "testing",
+    "e2e"
+  ],
+  "author": "Marismar Costa",
+  "license": "ISC",
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "protractor": "^7.0.0",
+    "protractor-helper": "^4.2.1",
+    "standardjs": "^1.0.0-alpha"
+  }
+}
