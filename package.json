@@ -37,6 +37,6 @@
     "faker": "^5.5.3",
     "protractor": "^7.0.0",
     "protractor-helper": "^4.2.1",
-    "standardjs": "^1.0.0-alpha"
+    "standard": "^16.0.3"
   }
 }
